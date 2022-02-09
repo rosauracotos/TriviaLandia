@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="cuerpo">
+	<center>
+		<section id="bienvenida" class="fondo flex-container">
+			<div class="row">
+				<div class="col">
+					<h2 class="textoPrincipal">Bienvenidos</h2>
+					<img class="imagenPrin" src="/img/trivia2.png"><br>
+			  </div>
+			<div>
+				<label for="name" class="name" >Cual es tu nombre?</label> <br>
+        <input id="name" class="inputBor" type="text"><br>
+        <label id="escribirNombre" class="nameVacio" >Debe ingresar nombre</label> <br>
+        <button id="jugar" class="boton">Empezar</button><br><br>
+      </div>
+    </section>
+  </center>
+<center>
+  <section id="empezar" class="fondo"> 
+    <div class="row">
+      <div class="col">
+        <h2 class="textoPrincipal">Hola <label id="recibirNombre"></label> 
+        <img class="imagenPrin" src="/img/hola.png"><br>
+        </h2>
+        
+      </div>
+        <label for="name" class="name">Selecciona una categoría</label>
+        <div id="seleccionar">
+        <button class="boton" id="ciudades"    type="button" onClick="seleccionarCategoria('ciudad')" >Ciudades</button>
+        <button id="Comidas"  class="boton"   type="button" onClick="seleccionarCategoria('comidas')"    >Comidas</button>
+         </div>
+    </section>
+</center>  
+  <br>
+  <center>
+  <section class="centrarForm">
+      <div id="formulario1" class="fondo" flex-container">
+            <form name="form1">
+                <label class="textoPregunta" for="primeraPregunta"> 1. ¿En qué país se encuenta Rio de Janeiro? </label><br>
+                <img class="imagenFor" src="/img/RiodJ.jpg"><br>
+                <img id="imagenResulta" class="imagenResultado" src="/img/correcto.png">
+                <input class="alternativa" type="radio" id="radioBrazil" name="pregunta1"  value="Brazil"> Brazil<br>
+                <input type="radio" id="radioSudáfricar" name="pregunta1" value="Sudáfrica"> Sudáfrica<br>
+                <input type="radio" id="radioPaísesBajos" name="pregunta1" value="Paísesbajos" class="centrado"> Países bajos<br>
+                <button type="button" class="boton" id="Responder1">Siguiente</button>
+            </form>
+        </div>
+   <div id="formulario2" class="fondo" flex-container">
+            <form name="form2">
+                <label for="segundaPregunta" class="textoPregunta"> 2. ¿En qué país se encuenta la ciudad de Paris?</label><br>
+                <img class="imagenFor" src="/img/Paris.jpg"><br>
+                <input type="radio" id="radioItalia" name="pregunta2" value="Italia">Italia<br>
+                <input type="radio" id="radioFrancia" name="pregunta2" value="Francia">Francia<br>
+                <input type="radio" id="radioAlemania" name="pregunta2" value="Alemania">Alemania<br>
+                <button type="button" class="boton" id="Responder2">Siguiente</button>
+            </form>
+     </div>
+     <div id="formulario3" class="fondo" flex-container">
+            <form name="form3" >
+                <label class="textoPregunta" for="terceraPregunta"> 3. ¿En qué país se encuenta la ciudad de Cusco? </label><br>
+                <img class="imagenFor" src="/img/Cusco2.jpg"><br>
+                <input type="radio" id="radioPeru" name="pregunta3"  value="Peru"> Perú<br>
+                <input type="radio" id="radioColombia" name="pregunta3" value="Colombia"> Colombia<br>
+                <input type="radio" id="radioBolivia" name="pregunta3" value="Bolivia"> Bolivia<br>
+                <button type="button" class="boton" id="Responder3">Siguiente</button>
+            </form>
+        </div>
+        <div id="formulario4" class="fondo" flex-container">
+            <form name="form4">
+                <label class="textoPregunta" for="cuartaPregunta"> 4. ¿En qué país se encuenta la ciudad de Londres? </label><br>
+                <img class="imagenFor" src="/img/Londres.jpg"><br>
+                <input type="radio" id="radioInglaterra" name="pregunta4"  value="Inglaterra"> Inglaterra<br>
+                <input type="radio" id="radioEscocia" name="pregunta4" value="Escocia"> Escocia<br>
+                <input type="radio" id="radioFrancia" name="pregunta4" value="Francia"> Francia<br>
+                <button type="button" class="boton" id="Responder4">Siguiente</button>
+            </form>
+        </div>
+        <div id="formulario5" class="fondo" flex-container">
+            <form name="form5">
+                <label class="textoPregunta" for="quintaPregunta"> 1. ¿A qué país le pertenece la "Papa a la Huancaína"? </label><br>
+                <img class="imagenFor" src="/img/papahuancaina.jpg"><br>
+                <input type="radio" id="radioChile" name="pregunta5"  value="Chile"> Chile<br>
+                <input type="radio" id="radioBolivia" name="pregunta5" value="Bolivia"> Bolivia<br>
+                <input type="radio" id="radioPerú" name="pregunta5" value="Perú"> Perú<br>
+                <button class="boton" type="button" id="Responder5">Siguiente</button>
+                </form>
+        </div>
+        <div id="formulario6" class="fondo" flex-container">
+            <form name="form6">
+                <label class="textoPregunta" for="sextaPregunta"> 2. ¿A qué país le pertenece la "Milanesa napolitana"? </label><br>
+                <img class="imagenFor" src="/img/milanesa.jpg"><br>
+                <input type="radio" id="radioPortugal" name="pregunta6"  value="Portugal"> Portugal<br>
+                <input type="radio" id="radioArgentina" name="pregunta6" value="Argentina"> Argentina<br>
+                <input type="radio" id="radioBrazil" name="pregunta6" value="Brazil"> Brazil<br>
+                <button class="boton" type="button" id="Responder6">Siguiente</button>
+                </form>
+        </div>
+        <div id="formulario7" class="fondo" flex-container">
+            <form name="form7">
+                <label class="textoPregunta" for="septimaPregunta"> 3. ¿A qué país le pertenece la "Pizza"? </label><br>
+                <img class="imagenFor" src="/img/pizza.jpg"><br>
+                <input type="radio" id="radioFrancia" name="pregunta7"  value="Francia"> Francia<br>
+                <input type="radio" id="radioEspaña" name="pregunta7" value="España"> España<br>
+                <input type="radio" id="radioItalia" name="pregunta7" value="Italia"> Italia<br>
+                <button class="boton" type="button" id="Responder7">Siguiente</button>
+                </form>
+        </div>
+        <div id="formulario8" class="fondo" flex-container">
+            <form name="form8">
+                <label class="textoPregunta" for="octavaPregunta"> 4. ¿A qué país le pertenece los "Tacos"?  </label><br>
+                <img class="imagenFor" src="/img/tacos.jpg"><br>
+                <input type="radio" id="radioMéxico" name="pregunta8"  value="Mexico"> México<br>
+                <input type="radio" id="radioParaguay" name="pregunta8" value="Paraguay"> Paraguay<br>
+                <input type="radio" id="radioHonduras" name="pregunta8" value="Honduras"> Honduras<br>
+                <button class="boton" type="button" id="Responder8">Responder</button>
+  </section>
+  </center>
+  <center>
+  <section id="fin" class="fondo">
+   <div class="row">
+     <div class="col">
+     <h3 class="puntaje">Tu puntaje es:  <label id="obtenerPuntaje"></label></h3>
+     </div>
+      <div class="col" id="gano">
+      <img class="imagenResultado" src="/img/trofeo.png">
+      </div>
+      <div class="col" id="perdio">
+        <p class="textRes">Sigue intentando!</p>
+      <img class="imagenResultado" src="/img/picachu.png">
+      </div>
+   </div>
+   <div>
+     <h4 class="respuestaCI">Respuestas Correctas : <label id="rptCorrecta"></label> </h4>
+     <h4 class="respuestaCI">Respuestas Incorrectas : <label id="rptIncoorrecta"></label> </h4>
+     <h4 id="arregloRptas" class="rptasCorrectas"></h4> 
+   </div>
+
+
+   <div>
+    <button class="boton" type="button" id="Finalizar" onclick="finalizarJuego()">Finalizar</button>
+    <button class="boton" type="button" id="regresar" onclick="volverAJugar()">Volver a jugar</button>   
+  </section>
+  </center>
+  
+
+
+<script src="script.js"></script>
+</body>
+</html>

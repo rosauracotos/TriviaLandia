@@ -1,0 +1,166 @@
+
+#color{
+  background-color: #f02525
+}
+.fondo{
+  background-color: Deeppink;
+
+   text-align: justify;
+   height:50% ;
+   padding-top: 0;
+ 
+
+}
+#empezar, #formulario1, #formulario2, #formulario3 , #formulario4, #formulario5, #formulario6,#formulario7,#formulario8,#fin ,#escribirNombre,#imagenResulta{
+  display: none;
+}
+
+
+#bienvenida,#empezar, #formulario1, #formulario2, #formulario3 , #formulario4, #formulario5, #formulario6,#formulario7,#formulario8,#fin {
+  margin: 0 auto;
+  border: 5px solid rgb(100, 12, 74);
+  width: 300px;
+  padding: 5% 5% 5% 5%;
+}
+
+#bienvenida,#empezar,#fin {
+  text-align: center;
+}
+
+.centrado {
+  text-align: left;
+}
+
+.imagenFor{
+  width:100%;
+}
+.imagenResultado{
+  width:60%;
+}
+
+
+.flex-container{
+  display: flex;
+}
+
+#cuerpo {
+background-image: url('/img/fondo4.jpg');
+background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  height: 97vh;
+}
+
+.boton{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #f3efef;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background:#560e72fa;
+  border-style: white;
+  border-radius:25px;
+  margin-top: 10px;
+  border: 1px solid rgb(240, 207, 230);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+
+.name{
+  color:rgb(232, 241, 191);
+  Font-family:  Consolas;
+  font-size:large;
+  text-align: center
+  
+}
+.nameVacio{
+  color:rgb(168, 65, 34);
+  font-family: "Segoe UI";
+  font-size:large;
+  background-color: rgb(224, 248, 11);
+}
+.inputBor{
+  border-bottom-left-radius: 10%;
+  border-color: red;
+}
+.textoPrincipal{
+  color:rgb(207, 248, 95);
+  font-family: Rockwell;
+  font-size: 250%;
+  padding-top: 10;
+  margin: 0 ;
+ }
+ .textoBienv{
+   color:rgb(207, 248, 95);
+  font-family: Rockwell;
+  font-size: 150%;
+ }
+
+.textoPregunta{
+  color:rgb(255, 255, 255);
+  font: bold 80% monospace;
+  font-size: 150%;
+  padding:10px auto ;
+  text-align:center;
+}
+.centrarForm{
+  color:rgb(229, 244, 247);
+  font-style: italic;
+  font-size: 100%;
+  text-align:center;
+}
+
+.imagenPrin{
+  width:50% ;
+  padding: 0% 10% 0% 10%;
+  
+}
+.imagenFlecha{
+  width:70%  
+}
+
+.textRes{
+  color:rgb(237, 240, 63);
+  font-style: italic;
+  Font-family: Lucida Sans;
+  font-size: 100%;
+  text-align:center;
+  margin: 0px auto;
+}
+.puntaje{
+  Font-family: Lucida Bright;
+  font-size: 100%;
+  background-clip: border-box;
+  border: 5px navy;
+  padding: 0px aut;
+  margin: 0px auto;
+   border-style: dotted double;
+   background: #F8D575;
+}
+
+.respuestaCI{
+  font: message-box;
+  font-size: 90%;
+  text-align:center;
+  font-weight: 580; 
+  color: #f3f3f3; 
+ background-color: rgb(199, 16, 144);
+  padding: 4px 4px 4px 4px;
+  margin: 0 px auto;
+  border-radius: 10px 10px 10px 10px; 
+}
+
+.rptasCorrectas{
+  font: icon;
+  font-size: 80%;
+  text-align:justify;
+  color: #181616; 
+  background:#e7bedd;
+  padding: 2px 2px 2px 2px;
+  margin: 0px auto; 
+
+}
